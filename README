@@ -1,10 +1,21 @@
+This repo is my follow along code from this YouTube GoLand Video
 
+https://www.youtube.com/watch?v=MpFog2kZsHk
+
+It uses a Ports and Adapters framework to build a simple application that can reveive a call via gRPC and stores info in a MySQL db.
+
+Some command to remember:
+=========================
+
+gRPC code that creates the go code based off the gRPC meta fils
 
 
 protoc --go_out=internal/adapters/framework/left/grpc --proto_path=internal/adapters/framework/left/grpc/proto internal/adapters/framework/left/grpc/proto/number_msg.proto
 protoc --go-grpc_out=internal/adapters/framework/left/grpc --proto_path=internal/adapters/framework/left/grpc/proto internal/adapters/framework/left/grpc/proto/arithmetic_svc.proto
 
 
-docker compose up --build
+Commands to start/stop the docker containers
+============================================
 
+docker compose up --build
 docker compose down
