@@ -17,5 +17,5 @@ protoc --go-grpc_out=internal/adapters/framework/left/grpc --proto_path=internal
 Commands to start/stop the docker containers
 ============================================
 
-docker compose up --build
-docker compose down
+docker compose up --build.
+docker compose down.
